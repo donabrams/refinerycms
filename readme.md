@@ -6,13 +6,15 @@ More information at [http://refinerycms.com](http://refinerycms.com)
 
 ## What this branch hopes to accomplish
 
-I want to add hierarchical page administration based on users.
+I want to add hierarchical page administration.
 
 This means instead of a user being granted access to edit all pages, they are granted access to that page and all subpages.
 
-Additionally users may be granted the ability to grant another person access to edit/update/create/administrate their pages or subpages.
+Additionally users may be granted the ability to grant another person their pages or subpages up to their permission level.
 
-Most of this work will happen in the pages controller.
+Also, some changes to who can create alternative urls might be needed (or they could purposefully override another).
+
+Most of this work will happen in the pages engine.
 
 ### Known changes required for this
 * Pages will now need edit/update/create/administrate user mappings added to them.
