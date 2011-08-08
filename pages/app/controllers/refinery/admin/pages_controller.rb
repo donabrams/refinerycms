@@ -20,6 +20,8 @@ module ::Refinery
         defined?(::Refinery::I18n) && ::Refinery::I18n.enabled?
       }
 
+# add another before_filter here to limit view of pages to only those in the hierarchy the person is allowed to view.
+
       def new
         @page = ::Refinery::Page.new
         ::Refinery::Page.default_parts.each_with_index do |page_part, index|
