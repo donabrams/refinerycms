@@ -4,6 +4,22 @@ __An open source Ruby on Rails content management system for Rails 3.__
 
 More information at [http://refinerycms.com](http://refinerycms.com)
 
+## What this branch hopes to accomplish
+
+I want to add hierarchical page administration based on users.
+
+This means instead of a user being granted access to edit all pages, they are granted access to that page and all subpages.
+
+Additionally users may be granted the ability to grant another person access to edit/update/create/administrate their pages or subpages.
+
+Most of this work will happen in the pages controller.
+
+### Known changes required for this
+* Pages will now need edit/update/create/administrate user mappings added to them.
+* The page listing controller will need to filter out pages not editable/updatable/administratable.
+* The list of recent activities should only contain page updates within their controller.
+* An administrator will need the ability to add user mappings to pages they administrate and their children.
+
 ## Requirements
 
 * [Bundler](http://gembundler.com)
